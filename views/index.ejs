@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+  	<meta charset="utf-8">
+  	<meta name="description" content="Your description goes here">
+  	<meta name="keywords" content="one, two, three">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+	<title>Palindrome Checker</title>
+
+	<!-- external CSS link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="/normalize.css">
+  <link rel="stylesheet" href="/styles.css">
+
+	</head>
+	<body>
+
+		<section id="container">
+			<header>
+				<h1>Palindrome Checker</h1>
+				<p>Enter a word and we'll check if it's a palindrome</p>
+			</header>
+	
+			<section>
+
+				<input type="text" id="input" placeholder="Enter word">
+				<button id="btn" type="button">Check</button>
+
+				<h3 id="result"></h3>
+			</section>
+
+			<section>
+				<h2>Palindrome Words</h2>
+				<ul>
+					<% for(let i = 0; i < messages.length; i++) {%>
+						<li class="palindrome-word">
+							<span name="word"><%= messages[i].userWord %></span>
+							<span><i class="fa-solid fa-trash"></i></span>
+
+						</li>
+					<% } %>
+				</ul>
+			</section>
+
+		</section>
+
+
+
+		<script type="text/javascript" src="main.js"></script>
+	</body>
+</html>
